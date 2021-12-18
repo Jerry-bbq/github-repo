@@ -40,7 +40,13 @@
 					"name": "Repositories"
 				}
 			]
-		}
+		},
+		"viewsWelcome": [
+			{
+				"view": "github.account",
+				"contents": "You are not yet logged in\n[Login with your GitHub account](command:githubRepoMgr.commands.auth.vscodeAuth)"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
