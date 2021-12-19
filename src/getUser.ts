@@ -25,7 +25,7 @@ export async function getUser(): Promise<any> {
   try {
     const response: any = await octokit.graphql(query)
     const userData = response.viewer
-
+    
     return {
       login: userData.login,
       profileUri: userData.url,

@@ -76,7 +76,9 @@ class UserClass {
     })
 
     try {
+      // forceNewSession: true
       const token = (await vscode.authentication.getSession(AUTH_PROVIDER_ID, SCOPES, { createIfNone: false }))?.accessToken
+
       if (token) {
         await this.initOctokit(token)
       } else {
